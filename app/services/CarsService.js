@@ -18,7 +18,7 @@ class CarsService {
         // NOTE: when using axios.... your response will always be wrapped in 'data'
 
         const mappedCars = response.data.map(dataObj => new Car(dataObj)) // NOTE passing the data objects from the API through our car constructor
-
+        console.log(response.data, 'this is the car data')
         AppState.cars = mappedCars
     }
 
