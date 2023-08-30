@@ -5,6 +5,7 @@ import { ValuesController } from "./controllers/ValuesController.js";
 import { HousesController } from "./controllers/HousesController.js";
 import { AboutView } from "./views/AboutView.js";
 import { CarsView } from "./views/CarsView.js";
+import { HousesView } from "./views/HousesView.js";
 
 /**
  * Register your routes for the application here
@@ -36,10 +37,8 @@ export const router = [
   {
     path: '#/houses',
     controller: HousesController,
-    view: /*html */ `
-    <div id = "houses"> </div>
-    `
-  }
+    view: HousesView
+  },
 
 
 ]
